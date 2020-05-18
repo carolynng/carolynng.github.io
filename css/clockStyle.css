@@ -1,0 +1,99 @@
+/* Layout */
+.main {
+    display: flex;
+    padding: 2em;
+    height: 90vh;
+    justify-content: center;
+    align-items: middle;
+}
+
+.clockbox {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#clock {
+    width: 60%;
+}
+
+.clock-description
+{
+    width: 40%;
+    float: right;
+    color: #DFCFBE;
+    padding: 75px 100px 75px 0px;
+    font-weight: 200;
+}
+
+.button {
+    display: inline;
+    border: 1px solid #DFCFBE;
+    border-radius: 5px;
+    padding: 7px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #DFCFBE;
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+/* Clock styles */
+.circle {
+    fill: #DFCFBE;
+    stroke: #55B4B0;
+    stroke-width: 12;
+    stroke-miterlimit: 10;
+}
+
+.mid-circle {
+    fill: #C3447A;
+}
+.hour-marks {
+    fill: none;
+    stroke: #55B4B0;
+    stroke-width: 9;
+    stroke-miterlimit: 10;
+}
+
+.hour-arm {
+    fill: none;
+    stroke: #C3447A;
+    stroke-width: 17;
+    stroke-miterlimit: 10;
+}
+
+.minute-arm {
+    fill: none;
+    stroke: #C3447A;
+    stroke-width: 11;
+    stroke-miterlimit: 10;
+}
+
+.second-arm {
+    fill: none;
+    stroke: #C3447A;
+    stroke-width: 4;
+    stroke-miterlimit: 10;
+}
+
+/* Transparent box ensuring arms center properly. */
+.sizing-box {
+    fill: none;
+}
+
+/* Make all arms rotate around the same center point. */
+/* Optional: Use transition for animation. */
+#hour,
+#minute,
+#second {
+    transform-origin: 300px 300px;
+    transition: transform .5s ease-in-out;
+}
