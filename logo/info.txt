@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Merienda-Bold
+font link: https://fonts.google.com/specimen/Merienda
+font author: Eduardo Tunni
+font author site: http://www.tipo.net.ar/
+
+
+icon designer: Wes Breazell
+icon designer link: /wes13
+        
+{"bg":"transparent","icon-gradient-0":"#0D2545","icon-gradient-1":"#A21F44","font":"#000000","slogan":"#141414"}
+      
