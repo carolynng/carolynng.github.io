@@ -10,15 +10,15 @@ let sec = date.getSeconds();
 
 // Convert sec/min/hr values to degrees
 let secPosition = sec*6; // 6 is from 360/60
-let minPosition = min*6 + sec/10 // breaks down increments between minute ticks on clock to account for seconds; 6*sec/60
-let hrPosition = hr*30 + min/2 // 30 is from 360/12; min/2 is from min*30deg/60
+let minPosition = min*6 + sec/10; // breaks down increments between minute ticks on clock to account for seconds; 6*sec/60
+let hrPosition = hr*30 + min/2; // 30 is from 360/12; min/2 is from min*30deg/60
 
 // This function updates the positions of each hand
 function runTheClock() {
   // Determine the new position of each hand given that the function is run once a second
-  hrPosition = hrPosition + (1/120)
-  minPosition = minPosition + (1/10)
-  secPosition = secPosition + 6
+  hrPosition = hrPosition + (1/120);
+  minPosition = minPosition + (1/10);
+  secPosition = secPosition + 6;
   
   // Move the hands to the new positions
   HOURHAND.style.transform = "rotate(" + hrPosition + "deg)";

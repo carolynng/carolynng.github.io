@@ -34,12 +34,12 @@ function spellCheck() {
 	let textEntered = testArea.value;
 	let originTextMatch = originText.substring( 0, textEntered.length );
 
-	if (textEntered == originText) {
+	if (textEntered === originText) {
 		clearInterval(interval); // This clears the clock interval, effectively stopping the clock
 		testWrapper.style.borderColor = "#32CD32";
 	}
 	else {
-		if (textEntered == originTextMatch) {
+		if (textEntered === originTextMatch) {
 			testWrapper.style.borderColor = "#65CCF3";
 		}
 		else {
